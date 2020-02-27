@@ -217,3 +217,87 @@ aside h2
 {
 	list-style-type: none;
 }
+
+/*Responsive*/
+
+@media screen and (max-width: 1000px)
+{
+	body
+	{
+		/*Largeur du contenu suit la largeur de la page*/
+		width: auto;
+	}
+
+	#bloc_page
+	{
+		/*Le contenu du liseré passe en bas de page*/
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.section_info
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	/*Toute la largeur en bas de la page*/
+	#left_side
+	{
+		width: auto;
+		font-size: 1.5em;
+	}
+
+	#left_side_info
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#left_side img
+	{	
+		/*Enlever la photo*/
+		display: none;
+	}
+
+	/*Adapter les marges en bas de page*/
+	#left_side_info
+	{
+		margin: 0 5% 0 5%;
+		font-size: 1.8em;
+	}
+
+	#right_side
+	{
+		/*Adapter la marge du contenu principal*/
+		margin: 0 5% 0 5%;
+		font-size: 1.8em;
+	}
+
+	#right_side p
+	{
+		font-size: 1.5em;
+	}
+
+	aside
+	{
+		/*date_location passe au-dessus, pas besoin de limiter la largeur*/
+		width: 100%;
+		font-size: 1.4em;
+	}
+
+	aside h2
+	{
+		margin-left: 35px;
+		font-size: 0.9em;
+	}
+
+	#liste_recommendations
+	{
+		/*passent l'une en dessous de l'autre*/
+		display: flex;
+		flex-direction: column;
+		font-size: 1.2em;
+	}
+}
