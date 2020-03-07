@@ -311,6 +311,11 @@ aside p
 		font-size: 2em;
 	}
 
+	.fa-dot-circle
+	{
+		font-size: 0.7em;
+	}
+
 	.description h3 
 	{
 		font-size: 1.9em;
@@ -333,5 +338,10 @@ aside p
 		display: flex;
 		flex-direction: column;
 		font-size: 1.2em;
+	}
+
+	#liste_recommendations h4
+	{
+		margin-bottom: 5px;
 	}
 }
