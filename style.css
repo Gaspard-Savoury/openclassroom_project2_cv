@@ -29,7 +29,7 @@ body
 	border: 3px #1A237E solid;
 }
 
-#left_side h1
+#left_side h2
 {
 	background-color: #263238;
 	color: #1976D2;
@@ -54,7 +54,7 @@ body
 	text-decoration: none;
 }
 
-#contact h2
+#contact h5
 {
 	font-weight: normal;
 	font-size: 0.8em;
@@ -105,10 +105,11 @@ header h1
 	font-size: 3em;
 }
 
-header h2
+header p
 {
 	margin-top: 0;
 	color: #263238;
+	font-size: 2.3em
 }
 
 #prenom
@@ -129,7 +130,7 @@ header h2
 	border-bottom-color: #1976D2;
 }
 
-.section_title h1
+.section_title h2
 {
 	margin-left: 20px;
 	text-transform: uppercase;
@@ -151,23 +152,25 @@ header h2
 
 aside
 {
-	padding-top: 5px;
+	padding-top: 0px;
 	width: 150px;
 	font-size: 0.7em;
 	list-style: none;
 }
 
-aside h1
+aside h5
 {
+	margin-top: 13px;
 	margin-bottom: 0px;
 	font-weight: bold;
+	font-size: 1.3em;
 }
 
-aside h2
+aside p
 {
-	margin-top: 0px;
+	margin-top: 2px;
 	font-weight: normal;
-	margin-left: 15px;
+	margin-left: 18px;
 	font-size: 1.3em;
 }
 
@@ -193,16 +196,19 @@ aside h2
 	text-align: justify;
 }
 
-.description h1
-{
+.description h3
+{	
+	margin-top: 12px;
 	margin-bottom: 0px;
 	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
-.description h2
+.description h4
 {
 	margin-top: 0px;
-	font-size: 1.2em
+	font-size: 1.2em;
 }
 
 #liste_recommendations
@@ -213,10 +219,16 @@ aside h2
 	color: #263238;
 }
 
+#liste_recommendations h4
+{
+	font-size: 1.4em;
+}
+
 #liste_recommendations ul
 {
 	list-style-type: none;
 }
+
 
 /*Responsive*/
 
@@ -284,13 +296,35 @@ aside h2
 	{
 		/*date_location passe au-dessus, pas besoin de limiter la largeur*/
 		width: 100%;
-		font-size: 1.4em;
+		display: flex;
 	}
 
-	aside h2
+	aside h5
 	{
+		font-size: 2em;
+	}
+
+	aside p
+	{
+		margin-top: 20px;
 		margin-left: 35px;
-		font-size: 0.9em;
+		font-size: 2em;
+	}
+
+	.description h3 
+	{
+		font-size: 1.9em;
+	}
+
+	.description h4
+	{
+		font-size: 1.5em;
+		margin-bottom: 2px;
+	}
+
+	.description p
+	{
+		margin: 0px 0px 50px 0px;
 	}
 
 	#liste_recommendations
